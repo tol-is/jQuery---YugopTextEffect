@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+	
+		<title>Yugop Text Effect</title>
+		
+		<meta name="author" content="ap-o.com" />
+		<meta name="copyright" content="Copyright 2012. All Rights Reserved." />
+		<meta name="description" content="A template for HTML/CSS/JavaScript projects" />
+	
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+		
+		<link rel="stylesheet" href="css/lib/reset.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/style.css"/>
+		
+	</head>
+	
+	<body>
+		
+		<h1 id="title"></h1>
+
+		<script src="js/lib/jquery-1.7.1.min.js"></script>
+		<script src="js/lib/RequestAnimationFrame.js"></script>
+		<script src="js/lib/jquery.yugop.txeff.js"></script>
+
+		<script>
+		 $(document).ready(function(){
+
+			var labels = new Array(
+				"We've got soul and sometimes we're super-bad.",
+				"Small town market share, big city egos.",
+				"An oasis of strangeness in a desert of normalcy.",
+				"Tomorrow's yesterdays, today!",
+				"The wrong side of The tracks - For all the right reasons.",
+				"Tune In. Die Happy.",
+				"Because you can handle the Truth!");
+			
+			var currPos = 0;
+			
+			playNextString();
+			
+			function playNextString()
+			{
+				$("#title").yugopEff(labels[currPos], 60);
+				
+				currPos++;
+				if(currPos==labels.length){
+					currPos = 0;
+				}
+				setTimeout(playNextString, 3060);
+			}
+			
+			
+
+		});
+		</script>
+
+	</body>
+	
+</html>

@@ -1,0 +1,27 @@
+    \     _ \        _ \    ___|  _ \   \  | 
+   _ \   |   |      |   |  |     |   | |\/ | 
+  ___ \  ___/_____| |   |  |     |   | |   | 
+_/    _\_|         \___/_)\____|\___/ _|  _| 
+                                             
+
+A little text effect.
+
+### Important
+Only works with simple strings. Haven't tried with any markup, but i am sure it will be absolutely messed up.
+
+### Dependencies (Included)
+1. jQuery 1.7.1 http://jquery.com/ (included in the example)
+1. Request Animation Frame http://paulirish.com/2011/requestanimationframe-for-smart-animating/ (included in the example)
+
+
+### Usage
+
+jqueryObject.yugopEff(String, frames);
+
+$("#title").yugopEff("Your new text", 60);
+
+Frames parameter is optional. Default is 30.
+
+
+## LICENSE
+Free, do whatever you like.
