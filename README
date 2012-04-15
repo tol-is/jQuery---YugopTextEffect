@@ -22,3 +22,6 @@ $("#title").yugopEff("Your new text", 60);
 
 Frames parameter is optional. Default is 30.
 
+### Live Example
+http://dev.ap-o.com/yugopeff/
+
